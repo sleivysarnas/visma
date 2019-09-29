@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "WeatherViewController.setBackground():WeatherViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UIColor(hex: &quot;#3327AE&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "UIColor(hex: &quot;#C86DD8&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.cityInputSubmit(sender:):HomeViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "HomeInteractor.submitCityInput(_:):HomeInteractor.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in HomeInteractor.submitCityInput(_:):HomeInteractor.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Weather.init(from:):Weather.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "description">
+            </PersistentString>
+            <PersistentString
+               value = "try weatherData.decode(String.self, forKey: .date)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "APIRoutable.request():APIRoutable.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Alamofire.request(self)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomeRouter.routeToWeather(with:):HomeRouter.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewController.navigationController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in DataRequest.response&lt;A&gt;(success:failure:):APIRequest+Response.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SessionManager.request(_:):SessionManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static URL.endpoint(_:relativeTo:):URL+Relative.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "URL(string: string, relativeTo: baseURL)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static AirUIBuilder.label(_:):AirUIBuilder.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "label.font.pointSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
