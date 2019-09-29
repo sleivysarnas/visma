@@ -28,7 +28,7 @@ struct HomeUIBuilder {
             action: #selector(HomeViewController.cityInputPressed),
             for: .touchDown
         )
-        let inputHeight = NSLayoutConstraint(item: inputField, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 45)
+        let inputHeight = LayoutConstraints.construct(item: inputField, attribute: .height, constant: 45)
         inputField.addConstraint(inputHeight)
         return inputField
     }
@@ -43,8 +43,8 @@ struct HomeUIBuilder {
             action: #selector(HomeViewController.cityInputSubmit),
             for: .touchUpInside
         )
-        let buttonWidth = NSLayoutConstraint(item: button, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 45)
-        let buttonHeight = NSLayoutConstraint(item: button, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 45)
+        let buttonWidth = LayoutConstraints.construct(item: button, attribute: .width, constant: 45)
+        let buttonHeight = LayoutConstraints.construct(item: button, attribute: .height, constant: 45)
         button.addConstraints([buttonWidth, buttonHeight])
         button.imageEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 5)
         button.imageView?.contentMode = .scaleAspectFit

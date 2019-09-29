@@ -60,11 +60,10 @@ final class HomeViewController: UIViewController {
     }
     
     func setBackground() {
-        let background = UIImage(named: "background")
         let imageView = UIImageView(frame: view.bounds)
         imageView.contentMode =  UIViewContentMode.scaleAspectFill
         imageView.clipsToBounds = true
-        imageView.image = background
+        imageView.image = UIImage(named: "background")
         imageView.center = view.center
         view.addSubview(imageView)
         self.view.sendSubview(toBack: imageView)
@@ -98,6 +97,8 @@ extension HomeViewController: HomeViewControllerInput {
     }
 }
 
+// MARK: - Google autocomplete
+
 extension HomeViewController: GMSAutocompleteViewControllerDelegate {
     
     func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
@@ -113,9 +114,7 @@ extension HomeViewController: GMSAutocompleteViewControllerDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
-    // User canceled the operation.
     func wasCancelled(_ viewController: GMSAutocompleteViewController) {
-        print("Autocomplete was cancelled.")
         self.dismiss(animated: true, completion: nil)
     }
 }
