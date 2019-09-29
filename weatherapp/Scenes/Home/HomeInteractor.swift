@@ -18,8 +18,10 @@ extension HomeInteractor: HomeInteractorInput {
             self?.presenter.present(weather)
         }
         
-        let failure: (Error) -> () = { error in
-            print(error)
+        let failure: (Error) -> () = { [weak self] error in
+            let alert = UIAlertController(title: "Oops!", message: error.localizedDescription, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
+            self?.presenter.present(alert)
         }
         
         APIRouter

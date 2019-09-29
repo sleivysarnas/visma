@@ -6,6 +6,7 @@ import GooglePlacePicker
 protocol HomeViewControllerInput: class {
     func setupLayout()
     func display(_ weather: Weather)
+    func display(_ error: UIAlertController)
     func cityInputPressed(cityInput: UITextField)
 }
 
@@ -74,6 +75,10 @@ extension HomeViewController: HomeViewControllerInput {
     
     func display(_ weather: Weather) {
         router.routeToWeather(with: weather)
+    }
+    
+    func display(_ error: UIAlertController) {
+        self.present(error, animated: true, completion: nil)
     }
     
     @objc func cityInputPressed(cityInput: UITextField) {
