@@ -10,7 +10,6 @@ struct HomeUIBuilder {
         return imageView
     }
     
-    //TODO: Tekstai turi but confige arba presenteri
     static var cityInput: UITextField {
         let inputField =  UITextField()
         inputField.attributedPlaceholder = NSAttributedString(

@@ -2,7 +2,6 @@ import UIKit
 import Hue
 
 struct AirUIBuilder {
-    //TODO: Cia ir kitur viska ismest i viena funkcija perpanaudojimui, kur galima
     static var logo: UIImageView {
         let image = #imageLiteral(resourceName: "logo")
         let imageView = UIImageView(image: image)
@@ -44,7 +43,6 @@ struct AirUIBuilder {
         )
     }
     
-    //TODO: Visus tuos ihardcodintus dydzius iskelt i exxtension
     static func name(_ name: String) -> UILabel {
         return label(
             text: name,
