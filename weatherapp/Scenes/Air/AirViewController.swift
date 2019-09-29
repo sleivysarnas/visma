@@ -66,7 +66,6 @@ extension AirViewController: AirViewControllerInput {
         if #available(iOS 11, *) {
             let guide = view.safeAreaLayoutGuide
             airStack.topAnchor.constraintEqualToSystemSpacingBelow(guide.topAnchor, multiplier: 1.0).isActive = true
-            //guide.bottomAnchor.constraintEqualToSystemSpacingBelow(airStack.bottomAnchor, multiplier: 1.0).isActive = true
             guide.bottomAnchor.constraint(equalTo: airStack.bottomAnchor, constant: 50).isActive = true
         } else {
             airStack.heightAnchor.constraint(equalToConstant: view.frame.height).isActive = true

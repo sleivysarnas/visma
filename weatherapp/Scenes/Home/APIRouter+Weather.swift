@@ -16,7 +16,6 @@ extension APIRouter.Weather: APIRoutable {
         }
     }
     
-    //TODO: ismest viska is stringo i kintamuosius
     var endpoint: String {
         switch self {
         case .get(let city):
