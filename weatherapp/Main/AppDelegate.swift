@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setUpGoogleMaps() {
-        GMSServices.provideAPIKey("AIzaSyAQ1jzEz5S3pZy2pd2HlcSVaKYKkTVWNps")
-        GMSPlacesClient.provideAPIKey("AIzaSyAQ1jzEz5S3pZy2pd2HlcSVaKYKkTVWNps")
+        GMSServices.provideAPIKey("")
+        GMSPlacesClient.provideAPIKey("")
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
