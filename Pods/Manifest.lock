@@ -1,5 +1,4 @@
 PODS:
-  - Alamofire (4.9.0)
   - GoogleMaps (3.1.0):
     - GoogleMaps/Maps (= 3.1.0)
   - GoogleMaps/Base (3.1.0)
@@ -13,26 +12,23 @@ PODS:
   - Hue (5.0.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.9.0)
   - GoogleMaps
   - GooglePlacePicker
   - Hue
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Alamofire
+  trunk:
     - GoogleMaps
     - GooglePlacePicker
     - GooglePlaces
     - Hue
 
 SPEC CHECKSUMS:
-  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   GoogleMaps: 5c13302e6fe6bb6e686b267196586b91cd594225
-  GooglePlacePicker: 1c60c2a26e9d1e73bcb0c6f89609db8d777d13c1
+  GooglePlacePicker: fa975116ac202ac29822c0a79758ea1c4db5a95f
   GooglePlaces: e874db179f2675c4f3eeda0b686b540273a578b0
   Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
 
-PODFILE CHECKSUM: 3c9fbd88939ad7256c754b3293a3678ef7a12303
+PODFILE CHECKSUM: deed12383d118beedf7ffc04b2414baed8804fd6
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4

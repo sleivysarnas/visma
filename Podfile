@@ -6,7 +6,6 @@ target 'weatherapp’ do
   use_frameworks!
 
   # Pods for weather
-  pod 'Alamofire', '~> 4.9.0’
   pod 'GooglePlacePicker’
   pod 'GoogleMaps'
   pod 'Hue'
