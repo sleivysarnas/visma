@@ -1,36 +1,20 @@
+//
+//  Weather.swift
+//  weatherapp
+//
+//  Created by Arnas Sleivys on 2021-02-06.
+//  Copyright © 2021 arnas. All rights reserved.
+//
+
+#warning("Replace dummy implementation with real Codable model")
+
 import Foundation
 
-struct Weather: Decodable {
-    
-    let description: [WeatherDescription]
-    let temperature: Double
-    let minTemperature: Double
-    let maxTemperature: Double
-    let name: String
-    let date: TimeInterval
-    
-    enum CodingKeys: String, CodingKey {
-        case weather
-        case main
-        case name
-        case date = "dt"
-    }
-    
-    enum MainKeys: String, CodingKey {
-        case temperature = "temp"
-        case minTemperature = "temp_min"
-        case maxTemperature = "temp_max"
-    }
-    
-    init(from decoder: Decoder) throws {
-        let weatherData = try decoder.container(keyedBy: CodingKeys.self)
-        let main = try weatherData.nestedContainer(keyedBy: MainKeys.self, forKey: .main)
-        
-        self.description = try weatherData.decode([WeatherDescription].self, forKey: .weather)
-        self.temperature = try main.decode(Double.self, forKey: .temperature)
-        self.minTemperature = try main.decode(Double.self, forKey: .minTemperature)
-        self.maxTemperature = try main.decode(Double.self, forKey: .maxTemperature)
-        self.name = try weatherData.decode(String.self, forKey: .name)
-        self.date = try weatherData.decode(TimeInterval.self, forKey: .date)
-    }
+struct Weather {
+    let description = [WeatherDescription]()
+    let temperature: Double = 0
+    let minTemperature: Double = 0
+    let maxTemperature: Double = 0
+    let name = ""
+    let date: Double = 0
 }

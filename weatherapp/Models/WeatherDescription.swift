@@ -1,15 +1,13 @@
-import Foundation
+//
+//  WeatherDescription.swift
+//  weatherapp
+//
+//  Created by Arnas Sleivys on 2021-02-06.
+//  Copyright © 2021 arnas. All rights reserved.
+//
 
-struct WeatherDescription: Codable {
-    
-    let description: String
-    
-    enum CodingKeys: String, CodingKey {
-        case description
-    }
-    
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.description = try container.decode(String.self, forKey: .description)
-    }
+#warning("Replace dummy implementation with real Codable model")
+
+struct WeatherDescription {
+    let description = ""
 }

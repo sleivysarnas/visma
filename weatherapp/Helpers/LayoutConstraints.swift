@@ -2,10 +2,10 @@ import UIKit
 
 struct LayoutConstraints {
     static func construct(item view1: Any,
-                          attribute attr1: NSLayoutAttribute,
-                          relatedBy relation: NSLayoutRelation = .equal,
+                          attribute attr1: NSLayoutConstraint.Attribute,
+                          relatedBy relation: NSLayoutConstraint.Relation = .equal,
                           toItem view2: Any? = nil,
-                          attribute attr2: NSLayoutAttribute = .notAnAttribute,
+                          attribute attr2: NSLayoutConstraint.Attribute = .notAnAttribute,
                           multiplier m: CGFloat = 1,
                           constant c: CGFloat) -> NSLayoutConstraint {
         return NSLayoutConstraint(

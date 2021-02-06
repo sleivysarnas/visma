@@ -61,12 +61,12 @@ final class HomeViewController: UIViewController {
     
     func setBackground() {
         let imageView = UIImageView(frame: view.bounds)
-        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
         imageView.clipsToBounds = true
         imageView.image = UIImage(named: "background")
         imageView.center = view.center
         view.addSubview(imageView)
-        self.view.sendSubview(toBack: imageView)
+        self.view.sendSubviewToBack(imageView)
     }
 }
 

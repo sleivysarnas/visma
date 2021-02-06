@@ -14,7 +14,7 @@ struct HomeUIBuilder {
         let inputField =  UITextField()
         inputField.attributedPlaceholder = NSAttributedString(
             string: "ENTER CITY NAME",
-            attributes: [NSAttributedStringKey.foregroundColor: UIColor(hex: "#C26BD6")]
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor(hex: "#C26BD6")]
         )
         inputField.setLeftPaddingPoints(10)
         inputField.font = UIFont.systemFont(ofSize: 12)
@@ -45,7 +45,7 @@ struct HomeUIBuilder {
         let buttonWidth = LayoutConstraints.construct(item: button, attribute: .width, constant: 45)
         let buttonHeight = LayoutConstraints.construct(item: button, attribute: .height, constant: 45)
         button.addConstraints([buttonWidth, buttonHeight])
-        button.imageEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 5)
+        button.imageEdgeInsets = UIEdgeInsets.init(top: 0, left: 5, bottom: 0, right: 5)
         button.imageView?.contentMode = .scaleAspectFit
         return button
     }

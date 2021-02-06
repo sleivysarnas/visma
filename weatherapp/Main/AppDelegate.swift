@@ -7,7 +7,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setUpGoogleMaps()
         window = UIWindow(frame: UIScreen.main.bounds)
         window!.rootViewController = UINavigationController(rootViewController: HomeViewController())
@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setUpGoogleMaps() {
-        GMSServices.provideAPIKey("")
-        GMSPlacesClient.provideAPIKey("")
+        GMSServices.provideAPIKey("AIzaSyAQ1jzEz5S3pZy2pd2HlcSVaKYKkTVWNps")
+        GMSPlacesClient.provideAPIKey("AIzaSyAQ1jzEz5S3pZy2pd2HlcSVaKYKkTVWNps")
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
@@ -41,7 +41,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    
-    
 }
 
